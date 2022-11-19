@@ -7,7 +7,7 @@ using namespace std;
 rotor::rotor(){
     type=0;
     pos=0;
-    anchor=0;
+    notch=0;
     next=0;
     prev=0;
 }
@@ -16,10 +16,10 @@ rotor::rotor(int input){
     type=input;
     pos=0;
     if(input==26){
-        anchor=0;
+        notch=0;
     }
     else{
-        anchor=get_anchor(input);
+        notch=get_notch(input);
     }
     for(int i=0;i<26;i++){
         if(input==26){
