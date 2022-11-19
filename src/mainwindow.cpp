@@ -83,7 +83,7 @@ void MainWindow::modedef(){
     }
     else if(rl!=pl||rl!=sl||sl!=pl){
         QMessageBox err;
-        err.setText("The length of\"Rotors\", \"Positions\" and\"Secret Code\" should be equal.");
+        err.setText("The length of \"Rotors\", \"Positions\" and \"Secret Code\" should be equal.");
         err.setWindowTitle("Error");
         err.exec();
     }
