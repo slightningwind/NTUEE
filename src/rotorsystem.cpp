@@ -68,7 +68,7 @@ string rotorsystem::encryption(string input){
 void rotorsystem::rotate(){
     rotor *current=first;
     for(int i=0;i<syslength;i++){
-        if(current->pos==current->anchor){
+        if(current->pos==current->notch){
             add(current->pos,1);
             current=current->next;
             continue;
