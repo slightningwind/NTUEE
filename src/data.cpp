@@ -58,7 +58,7 @@ int invrots[26][26]=
 
 int refl[26]={11,8,14,17,5,4,19,22,1,18,12,0,10,25,2,24,23,3,9,6,21,20,7,16,15,13};
 
-int anchors[26]={0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25};
+int notches[26]={0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25};
 int get_data(int cat,int a,int b){
     if(cat==1){
         return rots[a][b];
@@ -70,6 +70,6 @@ int get_data(int cat,int a,int b){
 int refl_data(int a){
     return refl[a];
 }
-int get_anchor(int a){
-    return anchors[a];
+int get_notch(int a){
+    return notches[a];
 }
