@@ -3,7 +3,7 @@ class rotor{
 private:
     int type;
     int pos;
-    int anchor;
+    int notch;
     int pattern[26];
     int invpattern[26];
     rotor *next;
